@@ -1,0 +1,36 @@
+{
+    "name": "blog",
+    "version": "1.0.0",
+    "description": "various articles and thoughts for public consumption",
+    "main": "index.js",
+    "scripts": {
+        "build": "vuepress build docs",
+        "dev": "vuepress dev docs",
+        "lint": "vue-cli-service lint",
+        "test": "mocha"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iSkore/blog.git"
+    },
+    "keywords": [
+        "blog"
+    ],
+    "author": "Nick Soggin",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/iSkore/blog/issues"
+    },
+    "homepage": "https://github.com/iSkore/blog#readme",
+    "devDependencies": {
+        "@vue/cli-plugin-eslint": "^4.3.1",
+        "@vue/cli-service": "^4.3.1",
+        "eslint": "^7.10.0",
+        "vuepress-plugin-mathjax": "^1.2.8"
+    },
+    "dependencies": {
+        "axios": "^0.20.0",
+        "mathjs": "^7.3.0",
+        "vuepress": "^1.6.0"
+    }
+}
