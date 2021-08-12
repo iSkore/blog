@@ -27,12 +27,12 @@ comprehensible language to a person who is non-technical. Making *their* ideas (
 fruition.
 
 **Being the smartest person in the room means <u>nothing</u>. Being the person that can make the least knowledgeable
-person understand said topic; is the smartest person in the room.**
+person understand said topic; is the smartest person in the room. This means everything.**
 
 The path of "programmer" is **not** a "nine-to-five job" nor should it be. We as programmers have a tremendous
 responsibility. We have a passion for *something*. That *something* drives our daily activities. And luckily, that
 *something* happens to make a decent amount of money in today's world; yet we seem to be broke most of the time because
-we bought 4 new Raspberry Pi's instead of using the 2 we already have.
+we bought 4 new Raspberry Pi's instead of using the 2 we already have. Or something to that effect.
 
 A programmer must care about their craft. Like an artist, their craft is everything. Not something to be bartered, but a
 serious internal accountability for perfection. A programmer must obsess over optimization, simplicity, and beauty of
