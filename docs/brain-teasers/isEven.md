@@ -1,4 +1,4 @@
-# isEven
+# (II) `isEven`
 
 ```javascript
 /**
@@ -28,12 +28,34 @@ console.assert( isEven( -2 ) === true );
 ```
 
 <br/>
+
+<details>
+<summary>Hint #1</summary>
+<div>
+
+Consider binary (`0b0100` and `0b0001`)
+
+</div>
+</details>
+
+<br/>
+
+<details>
+<summary>Hint #2</summary>
+<div>
+
+Consider [Bitwise Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators)
+
+</div>
+</details>
+
+<br/>
 ------
 <br/>
 
 <details>
 <summary>Answer</summary>
-<p>
+<div>
 
 Lets break this down:
 - `n === 0` first we have to check if `n` is `0` because `0` is an even number according to math wizards
@@ -87,5 +109,5 @@ console.assert( isEven( -1 ) === false );
 console.assert( isEven( -2 ) === true );
 ```
 
-</p>
+</div>
 </details>

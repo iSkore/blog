@@ -12,4 +12,8 @@ Some come from interview questions.
 Some are just made up.
 Most come from teaching of the best mentor I've ever had [Julian Jensen](https://github.com/julianjensen).
 
+**All problems are in JavaScript syntax but the logic remains relatively the same across all programming languages**
+
+**All problems have difficulty notations next to them - (I) is the easiest, (V) is the hardest**
+
 Enjoy.
