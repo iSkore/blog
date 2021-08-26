@@ -1,15 +1,37 @@
 # (II) `omit`
 
-This method is useful for crea
+This method is useful for filtering items out of an object.
+
+This teaser has two parts:
+
+1. object copy
+
+```javascript
+function omitCopy( o, ...keys ) {
+
+}
+
+const obj = { a: 1, b: 2, c: 3 };
+console.assert( JSON.stringify( omitCopy( obj, 'a' ) ) === '{\"b\":2,\"c\":3}' );
+console.assert( JSON.stringify( omitCopy( obj, 'd' ) ) === '{\"a\":1,\"b\":2,\"c\":3}' );
+console.assert( JSON.stringify( omitCopy( obj, 'a', 'b', 'c' ) ) === '{}' );
+```
+
+2. original object
 
 ```javascript
 function omit( o, ...keys ) {
 
 }
 
-console.assert( JSON.stringify( omit( { a: 1, b: 2, c: 3 }, 'a' ) ) === '{\"b\":2,\"c\":3}' );
-console.assert( JSON.stringify( omit( { a: 1, b: 2, c: 3 }, 'd' ) ) === '{\"a\":1,\"b\":2,\"c\":3}' );
-console.assert( JSON.stringify( omit( { a: 1, b: 2, c: 3 }, 'a', 'b', 'c' ) ) === '{}' );
+const obj = { a: 1, b: 2, c: 3 };
+console.assert( JSON.stringify( obj ) === '{"a":1,"b":2,"c":3}' );
+omit( obj, 'a' );
+console.assert( JSON.stringify( obj ) === '{"b":2,"c":3}' );
+omit( obj, 'b' );
+console.assert( JSON.stringify( obj ) === '{"c":3}' );
+omit( obj, 'c' );
+console.assert( JSON.stringify( obj ) === '{}' );
 ```
 
 <br/>
@@ -20,10 +42,8 @@ console.assert( JSON.stringify( omit( { a: 1, b: 2, c: 3 }, 'a', 'b', 'c' ) ) ==
 <summary>Answer</summary>
 <div>
 
-`omitCopy` is one potential answer.
-Likely the most optimal but notice it *creates* a new object rather than acting on the original.
-
-`omit` acts on the original object.
+1. `omitCopy` is one potential answer
+Notice it *creates* a new object rather than acting on the original.
 
 ```javascript
 function omitCopy( o, ...keys ) {
@@ -42,7 +62,11 @@ function omitCopy( o, ...keys ) {
 console.assert( JSON.stringify( omitCopy( { a: 1, b: 2, c: 3 }, 'a' ) ) === '{"b":2,"c":3}' );
 console.assert( JSON.stringify( omitCopy( { a: 1, b: 2, c: 3 }, 'd' ) ) === '{"a":1,"b":2,"c":3}' );
 console.assert( JSON.stringify( omitCopy( { a: 1, b: 2, c: 3 }, 'a', 'b', 'c' ) ) === '{}' );
+```
 
+2. `omit` acts on the original object.
+
+```javascript
 function omit( o, ...keys ) {
     for ( let i = 0; i < keys.length; i++ ) {
         delete o[ keys[ i ] ];
@@ -53,6 +77,10 @@ const obj = { a: 1, b: 2, c: 3 };
 console.assert( JSON.stringify( obj ) === '{"a":1,"b":2,"c":3}' );
 omit( obj, 'a' );
 console.assert( JSON.stringify( obj ) === '{"b":2,"c":3}' );
+omit( obj, 'b' );
+console.assert( JSON.stringify( obj ) === '{"c":3}' );
+omit( obj, 'c' );
+console.assert( JSON.stringify( obj ) === '{}' );
 ```
 
 </div>
