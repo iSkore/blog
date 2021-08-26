@@ -16,4 +16,11 @@ Most come from teaching of the best mentor I've ever had [Julian Jensen](https:/
 
 **All problems have difficulty notations next to them - (I) is the easiest, (V) is the hardest**
 
-Enjoy.
+### Setting up your environment for these brain-teasers
+
+1. Download and install [Node.js](https://nodejs.org/en/) (LTS or Current does not matter for these exercises)
+2. Download and install an editor. I recommend [WebStorm](https://www.jetbrains.com/webstorm/) but a free editor like [VS Code](https://code.visualstudio.com/) or [Atom](https://atom.io/) works just fine too.
+3. Open your editor, create a file, make your edits
+3a. run the file through the editor
+3b. or open terminal, `cd ~/<your project directory>` and execute the file `node brain-teaser.js`
+4. Enjoy.
