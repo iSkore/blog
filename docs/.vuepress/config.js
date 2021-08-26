@@ -1,12 +1,12 @@
 const
-    pack     = require( '../../package.json' ),
-    fs       = require( 'fs' ),
-    { join } = require( 'path' );
+    pack = require( '../../package.json' ),
+    fs   = require( 'fs' ),
+    path = require( 'path' );
 
 const
     repo  = pack.repository.url.replace( 'git+', '' ).replace( '.git, ' ),
     cwd   = process.cwd(),
-    pdocs = join( cwd, 'docs' );
+    pdocs = path.join( cwd, 'docs' );
 
 function relativePath( n ) {
     return n.replace( pdocs, '' );
@@ -15,13 +15,13 @@ function relativePath( n ) {
 function readAndMapDocs( docPath ) {
     return fs.readdirSync( docPath )
         .map( ( item ) => {
-            const fpath = join( docPath, item );
+            const fpath = path.join( docPath, item );
 
             if ( fs.lstatSync( fpath ).isDirectory() ) {
-                return relativePath( join( fpath, `${ item }.md` ) );
+                return relativePath( path.join( fpath, `${ item }.md` ) );
             }
 
-            return relativePath( join( docPath, item ) );
+            return relativePath( path.join( docPath, item ) );
         } )
         .filter( ( i ) => !i.endsWith( 'README.md' ) && i.endsWith( '.md' ) );
 }
@@ -32,7 +32,8 @@ module.exports = {
     head: [
         [ 'meta', { name: 'theme-color', content: '#3eaf7c' } ],
         [ 'meta', { name: 'apple-mobile-web-app-capable', content: 'yes' } ],
-        [ 'meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' } ]
+        [ 'meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' } ],
+        [ 'link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' } ]
     ],
     base: process.env.NODE_ENV === 'production' ? '/blog/' : '',
     host: '0.0.0.0',
@@ -46,7 +47,17 @@ module.exports = {
             { text: 'Home', link: '/' }
         ],
         sidebar: [
-            [ '/', 'Home' ]
+            [ '/', 'Home' ],
+            {
+                title: 'Brain-Teasers',
+                path: relativePath( path.join( pdocs, 'brain-teasers' ) ),
+                sidebarDepth: 1,
+                children: readAndMapDocs( path.join( pdocs, 'brain-teasers' ) )
+            }
         ]
+    },
+    extendMarkdown: ( md ) => {
+        md.set( { breaks: true } );
+        md.use( require( 'markdown-it-katex' ) );
     }
 };

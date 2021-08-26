@@ -7,3 +7,7 @@
 A collection of various articles and thoughts for public consumption
 My thoughts are my own and not a representation of my employer
 
+Thank you KeTeX (https://katex.org/)
+
+### Notes
+- https://katex.org/docs/supported.html
