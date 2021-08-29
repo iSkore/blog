@@ -3,7 +3,7 @@ actionText: Get Started →
 actionLink: /guide/
 ---
 
-# intro of program
+# examining a programmer
 
 For starts, this article thoughts, ideas, and representation is independent of any past, present, or future employers.
 My opinions are my own, and I represent myself.
