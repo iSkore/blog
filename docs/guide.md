@@ -1,4 +1,9 @@
-# overview of being a programmer
+---
+actionText: Get Started →
+actionLink: /guide/
+---
+
+# intro of program
 
 For starts, this article thoughts, ideas, and representation is independent of any past, present, or future employers.
 My opinions are my own, and I represent myself.
@@ -7,9 +12,8 @@ Secondly, these ideas written forth are subject to change (written early Aug 202
 same, some nuances may differ.
 
 Becoming a programmer is a difficult journey. There is no easy button in life, nor in coding. This path will require
-dedication, perseverance, and craftspersonship. To "make it" is a state of mind. But letting arrogance rip, "making it"
-to me is a 6-figure occupation in the Norther Virgina area, with enough room to comfortably raise a family, and afford a
-humble place of our own.
+dedication, perseverance, and craftspersonship. Your craft is everything. Someone with no craft is empty.
+It encompasses your thoughts, feelings, and you *feel* you must prefect it. Which you must.
 
 To be a "no shit" programmer requires obsession. A puzzle that is constantly in your mind. On your drive to the grocery
 store, you think of code. On a casual walk through the park, you randomly epiphanized the solution to that problem you
