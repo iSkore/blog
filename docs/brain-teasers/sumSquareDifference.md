@@ -12,7 +12,7 @@
  * @return {number} - difference between the sum of the squares of the first n natural numbers and the square of the sum
  */
 
-function isEven( n ) {
+function sumSquareDifference( n ) {
     
 }
 
