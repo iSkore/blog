@@ -31,7 +31,7 @@ console.assert( sumSquareDifference( 100 ) );
 Using a for-loop is one potential answer, but there is a better way using the [sum of n numbers](https://en.wikipedia.org/wiki/1_%2B_2_%2B_3_%2B_4_%2B_%E2%8B%AF) and the [sum of n square numbers](https://en.wikipedia.org/wiki/Square_pyramidal_number) formulas. 
 
 ```javascript
-function sumSquareDifference {
+function sumSquareDifference( n ) {
     const sumOfN = ( n * ( n + 1 ) ) / 2;
     const sumOfNSquare = ( n * ( n + 1 ) * ( 2 * n + 1 ) ) / 6;
 
