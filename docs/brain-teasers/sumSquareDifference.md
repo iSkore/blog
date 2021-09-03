@@ -16,7 +16,12 @@ function sumSquareDifference( n ) {
     
 }
 
-console.assert( sumSquareDifference( 100 ) );
+console.assert( sumSquareDifference( 100 ) === 25164150 );
+console.assert( sumSquareDifference( 5 ) === 170 );
+console.assert( sumSquareDifference( 0 ) === 0 );
+console.assert( sumSquareDifference( -100 ) === 24830850 );
+console.assert( sumSquareDifference( 100 ) === 25164150 );
+console.assert( sumSquareDifference( 0.5 ) === -0.109375 );
 
 ```
 
