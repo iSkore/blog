@@ -17,6 +17,7 @@ Resources for development learning
 - https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011
 - https://dev.to/codefoxx/25-beginner-javascript-project-ideas-3m9h
 - http://zpalexander.com/you-cant-javascript-under-pressure/
+- https://www.freecodecamp.org/news/how-to-become-a-junior-software-engineer-in-6-months/amp/
 
 101 certificates:
 - Cloud Practitioner
