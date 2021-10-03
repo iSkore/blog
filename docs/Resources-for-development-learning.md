@@ -18,6 +18,7 @@ Resources for development learning
 - https://dev.to/codefoxx/25-beginner-javascript-project-ideas-3m9h
 - http://zpalexander.com/you-cant-javascript-under-pressure/
 - https://www.freecodecamp.org/news/how-to-become-a-junior-software-engineer-in-6-months/amp/
+- https://dev.to/said_mounaim/20-javascript-projects-52cj
 
 101 certificates:
 - Cloud Practitioner
