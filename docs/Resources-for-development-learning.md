@@ -23,6 +23,9 @@ Resources for development learning
 Blogs:
 - https://nodeland.dev/
 
+Inspirational Movies:
+- https://www.youtube.com/watch?v=OrxmtDw4pVI
+
 101 certificates:
 - Cloud Practitioner
 - CompTIA Security+
