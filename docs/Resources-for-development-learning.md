@@ -20,6 +20,9 @@ Resources for development learning
 - https://www.freecodecamp.org/news/how-to-become-a-junior-software-engineer-in-6-months/amp/
 - https://dev.to/said_mounaim/20-javascript-projects-52cj
 
+How to GIT:
+- https://github.com/opencodeiiita/GoGit
+
 Blogs:
 - https://nodeland.dev/
 
