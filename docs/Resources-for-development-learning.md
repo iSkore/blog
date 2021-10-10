@@ -21,6 +21,7 @@ Resources for development learning
 - https://dev.to/said_mounaim/20-javascript-projects-52cj
 
 How to GIT:
+- https://towardsdatascience.com/a-git-cheatsheet-that-all-coders-need-bf8ad4d91576
 - https://github.com/opencodeiiita/GoGit
 
 Blogs:
