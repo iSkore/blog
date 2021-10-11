@@ -19,6 +19,7 @@ Resources for development learning
 - http://zpalexander.com/you-cant-javascript-under-pressure/
 - https://www.freecodecamp.org/news/how-to-become-a-junior-software-engineer-in-6-months/amp/
 - https://dev.to/said_mounaim/20-javascript-projects-52cj
+- https://www.freecodecamp.org/news/how-to-learn-programming/amp/
 
 How to GIT:
 - https://towardsdatascience.com/a-git-cheatsheet-that-all-coders-need-bf8ad4d91576
